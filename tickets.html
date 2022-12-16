@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="tickets.css">
+
+    <title>Conferencia</title>
+  </head>
+  
+  <body>
+    <!-- Barra de navegacion superior -->
+    
+    <nav class="navbar navbar-expand-md navbar navbar-dark bg-colornav text-center">
+        <div class="container-fluid mx-4" >
+            
+            <a class="navbar-brand " href="https://www.buenosaires.gob.ar/educacion/codo-codo">
+                <img src="./img/codoacodo.png" alt="" width="25%">
+                Conf Bs As
+            </a>
+                
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse"  id="navbarNav">
+                <ul class="navbar-nav ms-auto" >
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.php#conferencia">La conferencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php#oradores">Los oradores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php#lugar">El lugar y la fecha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php#inscripcion" tabindex="-1" aria-disabled="true">Conviértete en orador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-success text-white" href="tickets.html" tabindex="-1" aria-disabled="true">Comprar tickets</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+    <!-- Fin Barra de navegacion superior -->
+
+<!-- CARDS -->
+<div class="section">
+    <div class="container mt-5 text-center">
+        <div class="row">
+
+            <!-- tarjeta 1 -->
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header bg-primary text-white ">Estudiante</div>
+                    <div class="card-body text-primary">
+                        <p class="card-text">Tienen un descuento</p>
+                        <h5 class="card-title">80%</h5>
+                        <p class="text-muted">* Presentar documentación</p>
+                    </div>
+                </div>
+            </div>
+            <!-- tarjeta 2 -->
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="card border-info mb-3" style="max-width: 18rem;">
+                    <div class="card-header bg-info text-white ">Trainee</div>
+                    <div class="card-body text-info">
+                        <p class="card-text">Tienen un descuento</p>
+                        <h5 class="card-title">50%</h5>
+                        <p class="text-muted">* Presentar documentación</p>
+                    </div>
+                </div>
+            </div>
+            <!-- tarjeta 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card border-warning mb-3" style="max-width: 18rem;">
+                    <div class="card-header bg-warning text-white ">Junior</div>
+                    <div class="card-body text-warning">
+                        <p class="card-text">Tienen un descuento</p>
+                        <h5 class="card-title">15%</h5>
+                        <p class="text-muted">* Presentar documentación</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- FIN CARDS -->
+    
+
+    <!-- ORADORES -->
+<div class="container text-center mt-3">
+    <a name="orador">
+        <h5>VENTA </h5>
+        <h2>VALOR DEL TICKET $200</h2>
+    </a>
+</div>    
+   <!-- FORMULARIO -->
+   <form class="form mt-5">
+    <div class="row">
+        <div class="col-md-6 mb-2">
+            <input id="nombre" type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+        </div>
+        <div class="col-md-6  mb-2">
+            <input id="apellido" type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+        </div>
+        <div class="col-md-12 mt-3">
+            <input id="email" type="email" class="form-control" placeholder="Correo" aria-label="Email">
+        </div>
+        <div class="col-md-6 mt-3">
+            Cantidad
+            <input id="cantidad" type="number" class="form-control mt-2" placeholder="cantidad" aria-label="Cantidad">
+        </div>
+        <div class="col-md-6 mt-3">
+            Categoría
+            <select id="categoria" class="form-select mt-2" aria-label="Default select example">
+                <option selected value="" class="text-muted">Elige una opción:</option>
+                <option value="sinCategoria">Sin categoría</option>
+                <option value="estudiante">Estudiante</option>
+                <option value="trainee">Trainee</option>
+                <option value="junior">Junior</option>
+              </select>
+        </div>
+    </div>
+    
+    <div class="alert alert-primary my-4" role="alert">
+        <h6 id="totalCompra">Total a pagar $</h6>
+      </div>
+    <div class="row">    
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="reset" class="btn btn-success btn-enviar py-3 ">Borrar</button>       
+        </div><div class="d-grid gap-2 col-6 mx-auto">
+            <button id="botonCalcular" type="button" class="btn btn-success btn-enviar">Resumen</button>       
+        </div>
+    </div>
+    <div>
+        <p id="mensajeNombre"></p>
+        <p id="mensajeApellido"></p>
+        <p id="mensajeEmail"></p>
+        <p id="mensajeCantidad"></p>
+        <p id="mensajeCategoria"></p>
+    </div>
+</form>
+
+
+<!-- FOOTER -->
+
+<div class="container-fluid mt-5">
+    <div class="row p-5 bg-footer text-white text-center d-fluid justify-content-center">
+        <div class="col">
+            <p class="h6">Preguntas frecuentes</p>
+        </div>
+        <div class="col">
+            <p class="h6">Prensa</p>
+        </div>
+        <div class="col">
+            <p class="h6">Contáctanos</p>
+        </div>
+        <div class="col">
+            <p class="h6">Conferencias</p>
+        </div>
+        <div class="col">
+            <p class="h6">Términos y condiciones</p>
+        </div>
+        <div class="col">
+            <p class="h6">Privacidad</p>
+        </div>
+        <div class="col">
+            <p class="h6">Estudiantes</p>
+        </div>
+    </div>
+</div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+    <script src="tickets.js"></script>
+  </body>
+</html>

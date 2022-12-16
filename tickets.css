@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bg-colornav {
+    background-color: #424243;
+}
+
+.section{
+    margin-left: 20%;
+    margin-right:  20%;
+}
+.card-header{
+    font-size: 20px;
+    
+}
+.card-text{
+    color: black;
+}
+.card-title{
+    color: black;
+}
+.form{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.alert{
+    border: none;
+}
+.btn-success{
+    background-color: #93cb3c;
+    border: none;
+    border-radius: 5px;
+}
+.btn-success:hover{
+    background-color: #aff047;
+}
+.footer {
+    margin: 0px;
+    
+}
+.bg-footer {
+    background-color: #1e5170;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+a:hover {
+    color: white;
+}

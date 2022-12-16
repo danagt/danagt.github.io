@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bg-colornav {
+    background-color: #424243;
+}
+.btn-success{
+    background-color: #93cb3c;
+    border: none;
+    border-radius: 5px;
+    
+}
+.img-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/ba1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    
+}
+.card-text1 {
+    margin: 50% 20% 0 0;
+    text-align: right;
+    justify-content: right;
+} 
+.card-text2 {
+    margin: 0 20% 0 0;
+    text-align: right;
+    justify-content: right;
+} 
+.texto-imagen{
+    margin: 0 20% 0 0;
+    text-align: right;
+    
+}
+
+.d-grid{
+    float: right;
+    margin-right: 20%;
+    margin-top: 10px;
+}
+.btn-outline-secondary{
+    color: white;
+    border: 1px solid white;
+    
+}
+
+.card{
+    width: 300px;
+}
+.img-card{
+    max-width: 100%;
+    height: auto;
+}
+.lugar{
+    background-color: #424243;
+    color: white;
+}
+p.card-text{
+    font-size: 16px;
+}
+
+.form{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.textarea{
+    font-size: 30px;
+}
+.form-label{
+    color: gray;
+}
+
+.footer {
+    margin: 0px;
+    
+}
+.bg-footer {
+    background-color: #1e5170;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+a:hover {
+    color: white;
+}
+
